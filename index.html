@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Amaranth" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/prototipo/logo.png">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>TransLab2.0</title>
+</head>
+
+<body>
+    <div class="containter">
+        <div class="row">
+            <div class="col mt-3">
+                <div class="header d-flex justify-content-center align-items-center">
+                    <img id="logo" src="assets/prototipo/logo.png" alt="logo">
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <h1 id="title">Trans-Lab</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-center form">
+                <form action="">
+                    <div class="form-group col" id="boxEmail">
+                        <input type="email" class="form-control" aria-hidden="true" placeholder="Correo electrónico" id="inputEmail">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="form-group col" id="boxPassword">
+                        <input type="password" class="form-control" placeholder="Contraseña" max="8" id="inputPassword" required>
+                        <i class="fas fa-unlock-alt"></i>
+                    </div>
+                    <button type="submit" class="btn btn-primary col" id="btnLogin"><strong>INICIAR SESIÓN</strong></button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a href="#" class="footer mt-4" id="forgotPass">¿Olvidaste tu contraseña?</a> </br>
+                </br>
+                </br>
+                <a href="#" class="footer d-flex justify-content-center"> ¿NO TIENES CUENTA? <span> REGISTRATE </span></a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+</body>
+
+</html>

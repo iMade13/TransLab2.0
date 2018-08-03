@@ -1,6 +1,4 @@
 const assert = require('chai').assert;
-global.window = global;
-require('../src/js/login')
 
 describe('Validar contraseña', () => {
     it('Debería tener máximo 8 caracteres', () => {
