@@ -24,10 +24,10 @@ Para la organización y planificación de las tareas que se llevaron a cabo se u
 
 Se mantuvo la diagramación y colores requeridos por el cliente, respetando el prototipo ya establecido. A continuación se muestran algunas imágenes del mismo. 
 
-![Login][https://preview.ibb.co/bUPAfe/inicio.jpg]
-![Home][https://preview.ibb.co/eyPyYz/opciones.jpg]
-![Menú][https://preview.ibb.co/i96dYz/menu_lateral.jpg]
-![Cálcular Tarifa][https://preview.ibb.co/bGaSRK/opcion_calcular2.jpg]
+![Login](/assets/prototipo/inicio.jpg)
+![Home](/assets/prototipo/opciones.jpg)
+![Menú](/assets/prototipo/menu-lateral.jpg)
+![Cálcular Tarifa](/assets/prototipo/opcion-calcular2.jpg)
 
 
 
