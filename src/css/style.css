@@ -9,7 +9,7 @@ div #title {
 }
 
 div #logo {
-    width: 40%;
+    width: 120px;
 }
 
 .form {
@@ -43,7 +43,7 @@ div #logo {
     margin-top: 5px;
 }
 
-.footer {
+.reg {
     color: white;
 }
 
@@ -52,7 +52,7 @@ a {
 }
 
 #forgotPass {
-    margin-left: 20px;
+    margin-right: 100px;
 }
 
 span {
