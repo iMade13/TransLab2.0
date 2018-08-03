@@ -1,5 +1,5 @@
 # TransLab 
-##Aplicación móvil para consultar saldo de la tarjeta BIP!
+## Aplicación móvil para consultar saldo de la tarjeta BIP!
 
 ### Introducción
 Para su uso es necesario contar con un usuario y contraseña con máximo 8 caracteres y solo números. Cuenta con un pérfil con el correo y foto, donde el usuario podrá agregar todas las tarjetas BIP que tenga. 
@@ -16,7 +16,7 @@ Para su acceso:
 
 ### Planificación
 
-Para la organización y planificación de las tareas que se realizaron se utilizó Trello como herramienta principal. Pueden acceder a través del enlace del siguiente enlace: [Trello](https://trello.com/invite/b/w9r6EmM0/f1b7420b1b82f8ed3b917410ec23d72c/track-translab20)
+Para la organización y planificación de las tareas que se llevaron a cabo se utilizó Trello como herramienta principal. Pueden acceder a través del enlace del siguiente enlace: [Trello](https://trello.com/invite/b/w9r6EmM0/f1b7420b1b82f8ed3b917410ec23d72c/track-translab20)
 
 *********************************************************************************************************************
 
@@ -24,9 +24,10 @@ Para la organización y planificación de las tareas que se realizaron se utiliz
 
 Se mantuvo la diagramación y colores requeridos por el cliente, respetando el prototipo ya establecido. A continuación se muestran algunas imágenes del mismo. 
 
-![Login][https://ibb.co/hmmdYz]
-![Home][https://ibb.co/k13E6K]
-![Menú][https://ibb.co/gqCJYz]
-![Cálcular Tarifa][https://ibb.co/f74MmK]
+![Login][https://preview.ibb.co/bUPAfe/inicio.jpg]
+![Home][https://preview.ibb.co/eyPyYz/opciones.jpg]
+![Menú][https://preview.ibb.co/i96dYz/menu_lateral.jpg]
+![Cálcular Tarifa][https://preview.ibb.co/bGaSRK/opcion_calcular2.jpg]
+
 
 
