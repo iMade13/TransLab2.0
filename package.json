@@ -1,19 +1,19 @@
 {
-  "name": "translab2.0",
-  "version": "1.0.0",
-  "description": "ejercicio 1 del Track",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha"
-  },
-  "keywords": [
-    "test",
-    "development"
-  ],
-  "author": "MadeleineM",
-  "license": "ISC",
-  "devDependencies": {
-    "chai": "^4.1.2",
-    "mocha": "^5.2.0"
-  }
+    "name": "translab2.0",
+    "version": "1.0.0",
+    "description": "ejercicio 1 del Track",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha"
+    },
+    "keywords": [
+        "test",
+        "development"
+    ],
+    "author": "MadeleineM",
+    "license": "ISC",
+    "devDependencies": {
+        "chai": "^4.1.2",
+        "mocha": "^5.2.0"
+    }
 }

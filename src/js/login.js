@@ -1,5 +1,5 @@
 window.validatePass = function(password) {
-    if (typeof(password) != 'number') {
+    if (typeof(parseInt(password)) != 'number') {
         return false;
     }
     if (password.legth > 8) {
@@ -7,4 +7,9 @@ window.validatePass = function(password) {
     }
     return true;
 
+}
+
+window.calculateRate = function(balance, rate) {
+
+    return balance - rate;
 }
