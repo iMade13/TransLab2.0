@@ -1,5 +1,3 @@
-const assert = require('chai').assert;
-
 describe('Validar contraseña', () => {
     it('Debería tener máximo 8 caracteres', () => {
         assert.equal(validatePass('01234567'), true)
