@@ -27,6 +27,7 @@ Se mantuvo la diagramación y colores requeridos por el cliente, respetando el p
 ![Login](/assets/prototipo/inicio.jpg)
 ![Home](/assets/prototipo/opciones.jpg)
 ![Menú](/assets/prototipo/menu-lateral.jpg)
+![Pérfil](/assets/prototipo/opcion-perfil.jpg)
 ![Cálcular Tarifa](/assets/prototipo/opcion-calcular2.jpg)
 
 
