@@ -1,0 +1,61 @@
+body {
+    background-color: rgb(62, 63, 65);
+    margin-top: 20%;
+}
+
+div #title {
+    font-family: 'Amaranth', sans-serif;
+    color: rgb(246, 168, 0)
+}
+
+div #logo {
+    width: 40%;
+}
+
+.form {
+    margin-top: 50px;
+}
+
+.form-group {
+    margin: 0;
+    position: relative;
+}
+
+.form-group i {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    padding: 10px 25px;
+    color: rgb(48, 48, 49);
+}
+
+#inputEmail,
+#inputPassword {
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+#btnLogin {
+    background-color: rgb(246, 168, 0);
+    border-color: rgb(246, 168, 0);
+    width: 100%;
+    color: rgb(67, 67, 68);
+    margin-top: 5px;
+}
+
+.footer {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+#forgotPass {
+    margin-left: 20px;
+}
+
+span {
+    color: rgb(246, 168, 0);
+    font-weight: bold;
+}
