@@ -1,61 +1,63 @@
-body {
-    background-color: rgb(62, 63, 65);
-    margin-top: 20%;
-}
-
-div #title {
-    font-family: 'Amaranth', sans-serif;
-    color: rgb(246, 168, 0)
-}
-
-div #logo {
-    width: 120px;
-}
-
-.form {
-    margin-top: 50px;
-}
-
-.form-group {
-    margin: 0;
-    position: relative;
-}
-
-.form-group i {
-    position: absolute;
+.menu-lateral {
+    background-color: #fff;
+    width: 70%;
+    z-index: 100;
+    position: fixed;
+    top: 0;
     left: 0;
-    top: 2px;
-    padding: 10px 25px;
-    color: rgb(48, 48, 49);
+    height: 100vh;
+    transition: all .3s ease;
+    transform: translateX(-100%);
+    padding: 30px;
 }
 
-#inputEmail,
-#inputPassword {
-    padding-left: 30px;
-    padding-right: 40px;
+.menu-lateral.active {
+    transform: translateX(0%)
 }
 
-#btnLogin {
-    background-color: rgb(246, 168, 0);
-    border-color: rgb(246, 168, 0);
-    width: 100%;
+.menu-lateral a {
+    display: block;
+    padding: 6px;
+    font-family: 'Amaranth', sans-serif;
     color: rgb(67, 67, 68);
-    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
-.reg {
-    color: white;
-}
-
-a {
+.menu-lateral a:hover {
+    background: #f2f2f2;
     text-decoration: none;
 }
 
-#forgotPass {
-    margin-right: 100px;
+.fondo-enlace {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    /* background: rgba(0, 0, 0, .5); */
+    z-index: 99;
 }
 
-span {
+.fondo-enlace.active {
+    display: block;
+    background: rgba(0, 0, 0, .5);
+}
+
+i {
     color: rgb(246, 168, 0);
-    font-weight: bold;
+    padding-right: 20px;
+}
+
+.barra {
+    /* position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; */
+    padding: .5rem 1rem;
+}
+
+#titulo-menu {
+    padding-left: 20%;
+    color: #fff;
+    text-transform: uppercase;
 }
