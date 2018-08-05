@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Amaranth" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/prototipo/logo.png">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Preguntas - TransLab2.0</title>
+</head>
+
+<body>
+    <!--comienzo barra navegación-->
+    <div class="">
+        <div class="row">
+            <div class="col">
+                <nav class="barra navbar-dark bg-dark ">
+                    <button class="navbar-toggler " id="btn-menu" type="button " data-toggle="collapse " data-target="#navbarToggleExternalContent " aria-controls="navbarToggleExternalContent " aria-expanded="false " aria-label="Toggle navigation ">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <span id="titulo-menu">Trans-Lab</span>
+                </nav>
+            </div>
+        </div>
+        <!--fin barra navegación-->
+
+        <!--comienzo preguntas-->
+        <div class="row">
+            <div class="col center">
+                <div id="titulo-preguntas" class="d-flex justify-content-center align-items-center">
+                    <p>PREGUNTAS</br> FRECUENTES</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-12 d-flex flex-column">
+                    <div id="accordion">
+                        <!-- Pregunta #1 -->
+                        <div class="card">
+                            <div id="heading1">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-preguntas" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    ¿Qué es la tarjeta bip!?
+                                </button>
+                                </h5>
+                                <div id="collapse1" class="collapse" arial-labelledby="heading1" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Es el medio de pago del sistema de transportes del Transantiago, que incluye buses y Metro.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Pregunta #2 -->
+                            <div class="card">
+                                <div id="heading2">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-preguntas" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                            ¿Cómo puedo saber el saldo de mi tarjeta</br> sin pagar un viaje?
+                                    </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse2" class="collapse" arial-labelledby="heading2" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Hay dos formas: ingresando tu tarjeta en un Infobip! o solicitando de forma impresa la información en un Centro bip!
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Pregunta #3 -->
+                            <div class="card">
+                                <div id="heading3">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-preguntas" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                            ¿Dónde puedo cambiar mi tarjeta bip! </br> portador en caso de falla?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse3" class="collapse" arial-labelledby="heading3" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Si tu tarjeta no funciona y tiene daños no atribuibles al usuario, llévala a una Oficina de Servicio al Cliente donde será cambiada por una nueva, sólo si se comprueba la falla. Si la tarjeta dañada tiene saldo, será traspasado en cinco días hábiles.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Pregunta #4 -->
+                            <div class="card">
+                                <div id="heading4">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-preguntas" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                                          ¿Qué cuidados requiere la tarjeta para </br> mantenerla en buenas condiciones?
+                                          </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse4" class="collapse" arial-labelledby="heading4" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Sólo debes evitar exponerla al calor, doblarla o quebrarla. Te recomendamos tenerla en un tarjetero plástico para aumentar su vida útil.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--fin del perfil-->
+
+        <!--Comienzo menu hamburguesa-->
+        <div class="row">
+            <div class="col col-md-3">
+                <div class="menu-lateral" id="menu-lateral">
+                    <a href="saldo.html" class="nav-link "><i class="fas fa-dollar-sign "></i> Ver Saldo</a>
+                    <a href="calcular.html" class="nav-link "><i class="fas fa-calculator "></i> Calcular Tarifa</a>
+                    <a href="profile.html" class="nav-link "><i class="fas fa-user-alt "></i> Perfil</a>
+                    <a href="preguntas.html" class="nav-link "><i class="fas fa-question "></i> Preguntas Frecuentes</a>
+                    <a href="home.html" class="nav-link "><i class="fas fa-home "></i> Home</a>
+                </div>
+            </div>
+        </div>
+        <!--Fin menú hamburguesa -->
+        <a href="#" class="fondo-enlace" id="fondo-enlace"></a>
+
+
+        <!-- <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js "></script> -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js " integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em " crossorigin="anonymous "></script>
+        <script src="src/js/menu.js"></script>
+</body>
+
+</html>

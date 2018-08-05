@@ -2,6 +2,11 @@ body {
     background: #f2f2f2;
 }
 
+.row,
+.col {
+    padding-right: 0;
+}
+
 
 /* -- MENU LATERAL */
 
@@ -159,4 +164,40 @@ input#btn-saldo.botones {
 input#btn-calcular.botones {
     margin-top: 20px;
     padding: 2px 35px;
+}
+
+#selectTarjetas {
+    margin-left: 5px;
+}
+
+.titulo-tarjetas {
+    background: rgb(67, 67, 68);
+    color: #fff;
+    text-align: center;
+}
+
+
+/* -- PREGUNTAS FRECUENTES --*/
+
+#titulo-preguntas {
+    color: #fff;
+    background-color: rgb(246, 168, 0);
+    height: 30vh;
+    font-weight: bold;
+    font-size: 1.3em;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.btn-preguntas {
+    background-color: transparent;
+    font-weight: bold;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+div.card-body {
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
 }
