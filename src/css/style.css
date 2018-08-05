@@ -96,13 +96,14 @@ i {
     margin: 18px;
 }
 
-#cardNumber {
+.cardNumber {
     border: none;
     background: none;
     border-bottom-style: groove;
     margin-bottom: 10px;
     font-family: 'Roboto', sans-serif;
     font-size: 0.9em;
+    width: 100%;
 }
 
 #userMail {
@@ -127,7 +128,35 @@ i {
     color: #fff;
     text-align: center;
     margin-top: 10px;
-    padding: 10px;
-    font-family: 'Amaranth', sans-serif;
+    padding: 6px;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
+}
+
+
+/* -- VER SALDO -- */
+
+.boxSaldo {
+    margin-top: 50px;
+}
+
+#cards {
+    margin-top: 25px;
+}
+
+input#btn-saldo.botones {
+    margin-top: 50px;
+    padding: 2px 35px;
+}
+
+
+/* -- CALCULAR TARIFA -- */
+
+#boxLabel {
+    margin-top: 40px;
+}
+
+input#btn-calcular.botones {
+    margin-top: 20px;
+    padding: 2px 35px;
 }
