@@ -1,81 +1,133 @@
-    body {
-        background: #f2f2f2;
-    }
-    
-    .menu-lateral {
-        background-color: #fff;
-        width: 70%;
-        z-index: 100;
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        transition: all .3s ease;
-        transform: translateX(-100%);
-        padding: 30px;
-        /* display: none; */
-    }
-    
-    .menu-lateral.active {
-        transform: translateX(0%)
-    }
-    
-    .menu-lateral a {
-        display: block;
-        padding: 6px;
-        font-family: 'Amaranth', sans-serif;
-        color: rgb(67, 67, 68);
-        margin-bottom: 10px;
-    }
-    
-    .menu-lateral a:hover {
-        background: #f2f2f2;
-        text-decoration: none;
-    }
-    
-    .fondo-enlace {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        top: 0;
-        left: 0;
-        background: rgba(0, 0, 0, .5);
-        z-index: 99;
-        display: none;
-    }
-    
-    .fondo-enlace.active {
-        display: block;
-    }
-    
-    i {
-        color: rgb(246, 168, 0);
-        padding-right: 20px;
-    }
-    
-    .barra {
-        padding: 5px;
-    }
-    
-    #titulo-menu {
-        color: #fff;
-        text-transform: uppercase;
-        font-family: 'Amaranth', sans-serif;
-        font-size: 1.2em;
-    }
-    /*-- MENU OPTION --*/
-    
-    .option {
-        display: grid;
-        margin-top: 10em;
-    }
-    
-    .option a {
-        background: rgb(246, 168, 0);
-        color: #fff;
-        text-align: center;
-        margin-top: 10px;
-        padding: 7px;
-        font-family: 'Amaranth', sans-serif;
-        font-size: 1.2em;
-    }
+body {
+    background: #f2f2f2;
+}
+
+
+/* -- MENU LATERAL */
+
+.menu-lateral {
+    background-color: #fff;
+    width: 70%;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transition: all .3s ease;
+    transform: translateX(-100%);
+    padding: 30px;
+}
+
+.menu-lateral.active {
+    transform: translateX(0%)
+}
+
+.menu-lateral a {
+    display: block;
+    padding: 6px;
+    font-family: 'Amaranth', sans-serif;
+    color: rgb(67, 67, 68);
+    margin-bottom: 10px;
+}
+
+.menu-lateral a:hover {
+    background: #f2f2f2;
+    text-decoration: none;
+}
+
+.fondo-enlace {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 99;
+    display: none;
+}
+
+.fondo-enlace.active {
+    display: block;
+}
+
+i {
+    color: rgb(246, 168, 0);
+    padding-right: 20px;
+}
+
+.barra {
+    padding: 5px;
+}
+
+#titulo-menu {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 1.2em;
+}
+
+
+/*-- OPTION --*/
+
+.option {
+    display: grid;
+    margin-top: 10em;
+}
+
+.option a {
+    background: rgb(246, 168, 0);
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    padding: 7px;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 1.2em;
+}
+
+
+/* --PROFILE -- */
+
+#userPhoto {
+    background-color: rgb(246, 168, 0);
+}
+
+#userPhoto img {
+    border-radius: 50%;
+    margin: 18px;
+}
+
+#cardNumber {
+    border: none;
+    background: none;
+    border-bottom-style: groove;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+}
+
+#userMail {
+    background-color: #fff;
+    padding: 10px 60px;
+    margin: 30px 0 30px 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+}
+
+#cardAdd {
+    margin-top: 15px;
+    background: #fff;
+    padding: 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+}
+
+.botones {
+    background: rgb(246, 168, 0);
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 1.2em;
+}

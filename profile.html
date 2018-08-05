@@ -9,16 +9,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="shortcut icon" href="assets/prototipo/logo.png">
     <link rel="stylesheet" href="src/css/style.css">
-    <title>Bienvenido - TransLab2.0</title>
+    <title>Pérfil - TransLab2.0</title>
 </head>
 
 <body>
-    <!--start home-->
-
+    <!--comienzo barra navegación-->
     <div class="container">
         <div class="row">
-            <div class="col col-md-6">
-
+            <div class="col">
                 <nav class="barra navbar-dark bg-dark ">
                     <button class="navbar-toggler " id="btn-menu" type="button " data-toggle="collapse " data-target="#navbarToggleExternalContent " aria-controls="navbarToggleExternalContent " aria-expanded="false " aria-label="Toggle navigation ">
                       <span class="navbar-toggler-icon"></span>
@@ -27,12 +25,37 @@
                 </nav>
             </div>
         </div>
+        <!--fin barra navegación-->
+
+        <!--comienzo del perfil-->
         <div class="row">
-            <div class="col-12 center">
-                <div id="photo" class="center"></div>
-                <span id="userName"></span>
+            <div class="col center">
+                <div id="userPhoto" class="d-flex justify-content-center">
+                    <img src="assets/img/user.png" alt="">
+                </div>
             </div>
         </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex flex-column">
+                    <span id="userMail">micorreo@correo.cl</span>
+                    <!-- </div>
+                <div class="col-12"> -->
+                    <input type="number" id="cardNumber" placeholder="Número tarjeta">
+                    <!-- </div>
+                <div class="col-12"> -->
+                    <input type="submit" id="btn-add" class="botones" value="AGREGAR TARJETA">
+                    <!-- </div>
+                <div class="col-12"> -->
+                    <div id="cardAdd">01234567</div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--fin del perfil-->
+
+        <!--Comienzo menu hamburguesa-->
         <div class="row">
             <div class="col col-md-3">
                 <div class="menu-lateral" id="menu-lateral">
@@ -44,15 +67,9 @@
                 </div>
             </div>
         </div>
+        <!--Fin menú hamburguesa -->
         <a href="#" class="fondo-enlace" id="fondo-enlace"></a>
     </div>
-
-
-
-
-
-    <!--end home -->
-
 
     <!-- <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js "></script> -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
