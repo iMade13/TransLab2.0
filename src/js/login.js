@@ -1,13 +1,13 @@
 // Initialize Firebase
-var config = {
-    apiKey: "AIzaSyAFhc-grSOcnOicd-FYECe4KbBnZMEssoU",
-    authDomain: "translab-made.firebaseapp.com",
-    databaseURL: "https://translab-made.firebaseio.com",
-    projectId: "translab-made",
-    storageBucket: "translab-made.appspot.com",
-    messagingSenderId: "749339486306"
-};
-firebase.initializeApp(config);
+// var config = {
+//     apiKey: "AIzaSyAFhc-grSOcnOicd-FYECe4KbBnZMEssoU",
+//     authDomain: "translab-made.firebaseapp.com",
+//     databaseURL: "https://translab-made.firebaseio.com",
+//     projectId: "translab-made",
+//     storageBucket: "translab-made.appspot.com",
+//     messagingSenderId: "749339486306"
+// };
+// firebase.initializeApp(config);
 
 window.onload = () => {
     firebase.auth().onAuthStateChanged(user => {
