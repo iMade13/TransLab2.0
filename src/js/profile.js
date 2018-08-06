@@ -1,19 +1,3 @@
-window.onload = () => {
-    firebase.auth().onAuthStateChanged((user) => {
-        if (user) {
-            userMail.innerText = user.email;
-            // userPhoto.innerText = user.photoURL;
-        } else {
-            console.log('User > ' + JSON.stringify(user));
-        }
-
-        saveCard = () => {
-            let numberCard = document.getElementById("cardNumber").value;
-            firebase.database().ref(`users/${user.uid}`).child('Bip').push(numberCard);
-        }
-    });
-}
-
 function loginWithFirebase() {
     const emailValue = inputEmail.value;
     const passwordValue = inputPassword.value; //traer los datos del document 
@@ -32,6 +16,21 @@ function loginWithFirebase() {
 function redirectFromLogin() {
     location.href = "home.html";
 }
+
+firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+        userMail.innerText = user.email;
+        // userPhoto.innerText = user.photoURL;
+    } else {
+        console.log('User > ' + JSON.stringify(user));
+    }
+
+    saveCard = () => {
+        let numberCard = document.getElementById("cardNumber").value;
+        firebase.database().ref(`users/${user.uid}`).child('Bip').push(numberCard);
+    }
+});
+
 
 const button = document.getElementById('btn-add');
 
