@@ -9,14 +9,7 @@ var config = {
 };
 firebase.initializeApp(config);
 
-window.onload = () => {
-        firebase.auth().onAuthStateChanged(user => {
-            if (user) {
-                currentUser = firebase.auth().currentUser
-            }
-        });
-    }
-    //Login
+//Login
 function loginWithFirebase() {
     const emailValue = inputEmail.value
     const passwordValue = inputPassword.value
