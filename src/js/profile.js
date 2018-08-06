@@ -26,7 +26,7 @@ button.addEventListener('click', () => {
     const newCard = document.createElement('option');
     let numberCard = document.createTextNode(cardBip);
     newCard.appendChild(numberCard);
-    contNew.appendChild(newCard);
-    contCard.appendChild(contNew);
+    // contNew.appendChild(newCard);
+    // contCard.appendChild(contNew);
 
 })
