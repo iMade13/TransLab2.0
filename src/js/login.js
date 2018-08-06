@@ -21,7 +21,7 @@ function loginWithFirebase() {
     firebase.auth().singInWithEmailAndPassword(emailValue, passwordValue)
         .then(() => {
             console.log('Usuario inicio sesión con éxito');
-            redirectFromLogin()
+            window.location = "home.html"
         })
         .catch((error) => {
             console.log('Error en firebase > Código > ' + error.code); //nos muestra el tipo de error que produce
