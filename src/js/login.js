@@ -1,4 +1,4 @@
-// Initialize Firebase
+// //Initialize Firebase
 var config = {
     apiKey: "AIzaSyAFhc-grSOcnOicd-FYECe4KbBnZMEssoU",
     authDomain: "translab-made.firebaseapp.com",
@@ -17,7 +17,7 @@ function loginWithFirebase() {
     firebase.auth().signInWithEmailAndPassword(emailValue, passwordValue)
         .then((e) => {
             console.log('usuario inicio sesion con exito')
-
+            redirectFromLogin()
         })
         .catch((error) => {
             console.log('error de firebase > codigo ' + error.message)
@@ -27,6 +27,12 @@ function loginWithFirebase() {
 function redirectFromLogin() {
     location.href = "home.html";
 }
+
+firebase.auth().onAuthStateChanged(user => {
+    if (user) {
+        redirectFromLogin()
+    }
+});
 
 /* --------- FUNCIONES DEL TEST  ------- */
 window.validatePass = function(passwordValue) {
