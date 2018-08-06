@@ -6,7 +6,7 @@ function loginWithFirebase() {
     firebase.auth().signInWithEmailAndPassword(emailValue, passwordValue)
         .then((e) => {
             console.log('usuario inicio sesion con exito')
-
+            redirectFromLogin();
         })
         .catch((error) => {
             console.log('error de firebase > codigo ' + error.message)
