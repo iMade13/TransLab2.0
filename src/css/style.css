@@ -5,6 +5,7 @@ body {
 .row,
 .col {
     padding-right: 0;
+    padding-left: 0;
 }
 
 
@@ -107,8 +108,9 @@ i {
     border-bottom-style: groove;
     margin-bottom: 10px;
     font-family: 'Roboto', sans-serif;
-    font-size: 0.9em;
+    font-size: 1em;
     width: 100%;
+    padding-top: 10px;
 }
 
 #userMail {
@@ -120,12 +122,13 @@ i {
     font-size: 0.9em;
 }
 
-#cardAdd {
+#contCard select {
     margin-top: 15px;
     background: #fff;
     padding: 3px;
     font-family: 'Roboto', sans-serif;
-    font-size: 0.9em;
+    font-size: 1em;
+    margin-bottom: 10px;
 }
 
 .botones {
@@ -136,6 +139,7 @@ i {
     padding: 6px;
     font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
+    justify-content: center;
 }
 
 
