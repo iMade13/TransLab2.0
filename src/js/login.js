@@ -36,7 +36,7 @@ function redirectFromLogin() {
 
 /* --------- FUNCIONES DEL TEST  ------- */
 window.validatePass = function(passwordValue) {
-    const passwordValue = inputPassword.value
+
     if (typeof(parseInt(passwordValue)) != 'number') {
         return false;
     }
