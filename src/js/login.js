@@ -1,22 +1,3 @@
-//Login
-function loginWithFirebase() {
-    const emailValue = inputEmail.value
-    const passwordValue = inputPassword.value
-
-    firebase.auth().signInWithEmailAndPassword(emailValue, passwordValue)
-        .then((e) => {
-            console.log('usuario inicio sesion con exito')
-            redirectFromLogin();
-        })
-        .catch((error) => {
-            console.log('error de firebase > codigo ' + error.message)
-        })
-}
-
-function redirectFromLogin() {
-    location.href = "home.html";
-}
-
 /* --------- FUNCIONES DEL TEST  ------- */
 window.validatePass = function(passwordValue) {
     const passwordValue = inputPassword.value
@@ -34,7 +15,6 @@ window.calculateRate = function(balance, rate) {
 }
 
 /*--------- FIN DEL TEST -----*/
-
 
 // function registerWithFirebase() {
 //     firebase.auth().createUserWithEmailAndPassword(emailValue, passwordValue)

@@ -14,6 +14,25 @@ window.onload = () => {
     });
 }
 
+function loginWithFirebase() {
+    const emailValue = inputEmail.value;
+    const passwordValue = inputPassword.value; //traer los datos del document 
+
+    firebase.auth().singInWithEmailAndPassword(emailValue, passwordValue)
+        .then(() => {
+            console.log('Usuario inicio sesión con éxito');
+            redirectFromLogin()
+        })
+        .catch((error) => {
+            console.log('Error en firebase > Código > ' + error.code); //nos muestra el tipo de error que produce
+            console.log('Error de firebase > Mensaje > ' + error.message);
+        });
+}
+
+function redirectFromLogin() {
+    location.href = "home.html";
+}
+
 const button = document.getElementById('btn-add');
 
 button.addEventListener('click', () => {
