@@ -1,3 +1,39 @@
+function registerWithFirebase() {
+
+    const emailValue = inputEmail.value
+    const passwordValue = inputPassword.value
+
+    firebase.auth().createUserWithEmailAndPassword(emailValue, passwordValue)
+        .then(() => {
+            console.log('usuario creado con exito')
+            redirectFromLogin()
+        })
+        .catch((error) => {
+            console.log('error de firebase > codigo ' + error.message)
+            document.getElementById('message').innerHTML = error.message
+        })
+}
+
+function loginWithFirebase() {
+    const emailValue = inputEmail.value
+    const passwordValue = inputPassword.value; //traer los datos del document 
+
+    firebase.auth().singInWithEmailAndPassword(emailValue, passwordValue)
+        .then(() => {
+            console.log('Usuario inicio sesión con éxito');
+            redirectFromLogin()
+        })
+        .catch((error) => {
+            console.log('Error en firebase > Código > ' + error.code); //nos muestra el tipo de error que produce
+            console.log('Error de firebase > Mensaje > ' + error.message);
+        });
+}
+
+function redirectFromLogin() {
+    location.href = "home.html";
+}
+
+
 /* --------- FUNCIONES DEL TEST  ------- */
 window.validatePass = function(passwordValue) {
     const passwordValue = inputPassword.value
@@ -15,20 +51,3 @@ window.calculateRate = function(balance, rate) {
 }
 
 /*--------- FIN DEL TEST -----*/
-
-// function registerWithFirebase() {
-//     firebase.auth().createUserWithEmailAndPassword(emailValue, passwordValue)
-//         // let passwordValue = document.getElementById('inputPassword').value.length
-//     const emailValue = inputEmail.value
-//     const passwordValue = inputPassword.value
-//         // if (passwordValue > 8 || typeof(parseInt(passwordValue)) != 'number') {
-//         //     alert('Su password debe tener máximo 8 números')
-//         .then(() => {
-//             console.log('usuario creado con exito')
-//             redirectFromLogin()
-//         })
-//         .catch((error) => {
-//             console.log('error de firebase > codigo ' + error.message)
-//         })
-//     console.log(passwordValue);
-// }
