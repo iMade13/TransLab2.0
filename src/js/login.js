@@ -9,14 +9,7 @@ var config = {
 };
 firebase.initializeApp(config);
 
-window.onload = () => {
-        firebase.auth().onAuthStateChanged(user => {
-            if (user) {
-                currentUser = firebase.auth().currentUser
-            }
-        });
-    }
-    //Login
+//Login
 function loginWithFirebase() {
     const emailValue = inputEmail.value
     const passwordValue = inputPassword.value
@@ -34,6 +27,12 @@ function loginWithFirebase() {
 function redirectFromLogin() {
     location.href = "home.html";
 }
+
+firebase.auth().onAuthStateChanged(user => {
+    if (user) {
+        currentUser = firebase.auth().currentUser
+    }
+});
 
 /* --------- FUNCIONES DEL TEST  ------- */
 window.validatePass = function(passwordValue) {

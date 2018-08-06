@@ -68,16 +68,6 @@
         };
         firebase.initializeApp(config);
     </script> -->
-
-    <script>
-        window.onload = () => {
-            firebase.auth().onAuthStateChanged(user => {
-                if (user) {
-                    redirectFromLogin()
-                }
-            });
-        }
-    </script>
 </body>
 
 </html>
