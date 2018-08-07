@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // //Initialize Firebase
 var config = {
     apiKey: "AIzaSyAFhc-grSOcnOicd-FYECe4KbBnZMEssoU",
@@ -11,7 +10,6 @@ var config = {
 firebase.initializeApp(config);
 
 //Login
-=======
 function registerWithFirebase() {
 
     const emailValue = inputEmail.value
@@ -33,21 +31,14 @@ function registerWithFirebase() {
 
 }
 
->>>>>>> c2f48a8c5f3fe34542975d85e3eb6a75ed521e97
 function loginWithFirebase() {
     const emailValue = inputEmail.value
     const passwordValue = inputPassword.value; //traer los datos del document 
 
     firebase.auth().signInWithEmailAndPassword(emailValue, passwordValue)
-<<<<<<< HEAD
         .then((e) => {
             console.log('usuario inicio sesion con exito')
             redirectFromLogin()
-=======
-        .then(() => {
-            console.log('Usuario inicio sesión con éxito');
-            window.location = "home.html"
->>>>>>> c2f48a8c5f3fe34542975d85e3eb6a75ed521e97
         })
         .catch((error) => {
             console.log('Error en firebase > Código > ' + error.code); //nos muestra el tipo de error que produce
@@ -59,11 +50,6 @@ function redirectFromLogin() {
     location.href = "home.html";
 }
 
-firebase.auth().onAuthStateChanged(user => {
-    if (user) {
-        redirectFromLogin()
-    }
-});
 
 /* --------- FUNCIONES DEL TEST  ------- */
 window.validatePass = function(passwordValue) {
