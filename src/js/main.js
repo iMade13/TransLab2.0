@@ -12,7 +12,7 @@ window.onload = () => {
     firebase.auth().onAuthStateChanged((user) => {
         if (user) {
             document.getElementById('userMail').innerText = user.email;
-            userPhotoo.innerText = URL("http://d28hp0i0mf9k3x.cloudfront.net/assets/default_person-3886b66ad5ca85d57ed2a0d12fd2b2e4.png")
+            userPhotoo.innerText = "http://d28hp0i0mf9k3x.cloudfront.net/assets/default_person-3886b66ad5ca85d57ed2a0d12fd2b2e4.png"
         } else {
             console.log('User > ' + JSON.stringify(user));
         }
