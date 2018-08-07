@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+    <select id="mySelect" size="8">
+
+  </select>
+
+
+    <button type="button" onclick="myFunction()">Insert option</button>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mySelect");
+            var option = document.createElement("option");
+            option.text = "Kiwi";
+            x.add(option);
+        }
+    </script>
+
+</body>
+
+</html>

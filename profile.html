@@ -17,7 +17,7 @@
     <div class="">
         <div class="row">
             <div class="col">
-                <nav class="barra navbar-dark bg-dark ">
+                <nav class="barra navbar-dark bg-dark">
                     <button class="navbar-toggler ml-4" id="btn-menu" type="button " data-toggle="collapse " data-target="#navbarToggleExternalContent " aria-controls="navbarToggleExternalContent " aria-expanded="false " aria-label="Toggle navigation ">
                       <span class="navbar-toggler-icon"></span>
                     </button>
@@ -31,7 +31,7 @@
         <div class="row">
             <div class="col center">
                 <div id="userPhoto" class="d-flex justify-content-center">
-                    <img src="assets/img/user.png" alt="">
+                    <!-- <img src="assets/img/user.png" alt=""> -->
                 </div>
             </div>
         </div>
@@ -40,37 +40,40 @@
                 <div class="col-12 d-flex flex-column">
                     <span id="userMail"></span>
                     <input type="number" class="cardNumber" id="cardNumber" placeholder="Número tarjeta">
-                    <input type="submit" id="btn-add" class="botones" value="AGREGAR TARJETA" onclick="saveCard()">
-                    <div class="d-flex justify-content-center p4" id=" contCard ">
+                    <button type="button" id="btn-add" class="botones" value="AGREGAR TARJETA" onclick="saveCard()">AGREGAR TARJETA</button>
 
-                    </div>
+                    <select class="custom-select d-flex justify-content-center p3 mt-3" style="width: 70%" id="contCard">
+                        
+                      </select>
+
+
                 </div>
             </div>
         </div>
         <!--fin del perfil-->
 
         <!--Comienzo menu hamburguesa-->
-        <div class="row ">
+        <div class="row">
             <div class="col col-md-3 ">
-                <div class="menu-lateral " id="menu-lateral ">
-                    <a href="saldo.html " class="nav-link "><i class="fas fa-dollar-sign "></i> Ver Saldo</a>
-                    <a href="calcular.html " class="nav-link "><i class="fas fa-calculator "></i> Calcular Tarifa</a>
-                    <a href="profile.html " class="nav-link "><i class="fas fa-user-alt "></i> Perfil</a>
-                    <a href="preguntas.html " class="nav-link "><i class="fas fa-question "></i> Preguntas Frecuentes</a>
-                    <a href="home.html " class="nav-link "><i class="fas fa-home "></i> Home</a>
+                <div class="menu-lateral" id="menu-lateral">
+                    <a href="saldo.html" class="nav-link"><i class="fas fa-dollar-sign"></i> Ver Saldo</a>
+                    <a href="calcular.html" class="nav-link"><i class="fas fa-calculator"></i> Calcular Tarifa</a>
+                    <a href="profile.html" class="nav-link"><i class="fas fa-user-alt"></i> Perfil</a>
+                    <a href="preguntas.html" class="nav-link"><i class="fas fa-question"></i> Preguntas Frecuentes</a>
+                    <a href="home.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
                 </div>
             </div>
         </div>
         <!--Fin menú hamburguesa -->
-        <a href="# " class="fondo-enlace " id="fondo-enlace "></a>
+        <a href="#" class="fondo-enlace" id="fondo-enlace"></a>
     </div>
 
-    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js "></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js " integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em " crossorigin="anonymous "></script>
-    <script src="src/js/menu.js "></script>
-    <script src="src/js/login.js "></script>
-    <script src="src/js/profile.js "></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em " crossorigin="anonymous "></script>
+    <script src="src/js/menu.js"></script>
+    <script src="src/js/login.js"></script>
+    <script src="src/js/main.js"></script>
 </body>
 
-</html>s
+</html>
