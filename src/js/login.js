@@ -1,3 +1,4 @@
+// let currentUser = '';
 function registerWithFirebase() {
 
     const emailValue = inputEmail.value
@@ -7,6 +8,9 @@ function registerWithFirebase() {
         console.log(passwordValue)
     } else {
         firebase.auth().createUserWithEmailAndPassword(emailValue, passwordValue)
+            // currentUser = firebase.auth().currentUser;
+            // firebase.database().ref(`users/email`).push(`${currentUser.email}`)
+            //     .once('value')
             .then(() => {
                 console.log('usuario creado con exito')
                 redirectFromLogin()
