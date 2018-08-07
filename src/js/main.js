@@ -40,20 +40,16 @@ window.onload = () => {
                 ref.once('value')
                     //.limitToLast(4)
                     .then((data) => {
-                        let saveData = Object.values(data.val());
-                        console.log(saveData)
-                        let values = Object.entries(saveData[0]);
-                        console.log(values)
+                        let datos = Object.values(data.val());
+                        console.log(datos)
+                        let tarjetas = Object.entries(datos[0]);
+                        console.log(tarjetas)
                         document.getElementById('contCard').innerHTML = '';
-                        //document.getElementById('selectTarjetas').innerHTML = '';
-                        //document.getElementById('cardsSaldo').innerHTML = '';
-                        values.forEach(element => {
-                            console.log(element[1]);
+                        tarjetas.forEach(e => {
+                            console.log(e[1]);
                             const option = document.createElement('option');
-                            option.innerText = element[1];
+                            option.innerText = e[1];
                             contCard.appendChild(option)
-                                //selectTarjetas.appendChild(option);
-                                //cardsSaldo.appendChild(option);
                         });
                     })
             }
