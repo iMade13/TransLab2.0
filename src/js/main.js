@@ -19,7 +19,11 @@ window.onload = () => {
         saveCard = () => {
             let numberCard = document.getElementById("cardNumber").value;
             document.getElementById('cardNumber').value = '';
-            firebase.database().ref(`users/${user.uid}`).child('NúmeroBip').push(numberCard);
+            if (numberCard == "") {
+                alert("Ingrese número de tarjeta")
+            } else {
+                firebase.database().ref(`users/${user.uid}`).child('NúmeroBip').push(numberCard);
+            }
 
             const contCard = document.getElementById('contCard');
             const option = document.createElement('option');
@@ -41,6 +45,8 @@ cargarAPI = () => {
             const dataBip = Object.values(data)
 
             let amountBip = dataBip[2];
-            document.getElementById("verSaldo").innerHTML = `Saldo total  </br> ${amountBip}`;
+            document.getElementById("verSaldo").innerHTML =
+                `<span class='col d-flex justify-content-center' id='txtCosto'>COSTO PASAJE</span>
+                <span class='col d-flex justify-content-center' id='costoPasaje'>${amountBip}</span>`;
         })
 }
