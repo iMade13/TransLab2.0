@@ -23,7 +23,7 @@ function loginWithFirebase() {
     const emailValue = inputEmail.value
     const passwordValue = inputPassword.value; //traer los datos del document 
 
-    firebase.auth().singInWithEmailAndPassword(emailValue, passwordValue)
+    firebase.auth().signInWithEmailAndPassword(emailValue, passwordValue)
         .then(() => {
             console.log('Usuario inicio sesión con éxito');
             window.location = "home.html"
