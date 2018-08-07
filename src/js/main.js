@@ -34,11 +34,29 @@ window.onload = () => {
             } else {
                 const db = firebase.database();
                 db.ref(`users/${currentUser.uid}`).child(`NumeroBip`).push(numberCard).key;
+
+                const ref = firebase.database().ref(`users/${currentUser.uid}`)
+                    //console.log(ref);
+                ref.once('value')
+                    //.limitToLast(4)
+                    .then((data) => {
+                        let saveData = Object.values(data.val());
+                        console.log(saveData)
+                        let values = Object.saveData(saveData[0].bip);
+                        values.forEach(element => {
+                            console.log(element[0]);
+                        });
+                    })
             }
         }
     });
 }
 
+//const showCards = () => {
+
+
+// bipSaved.innerHTML =
+// `<h6 class='teal white darkgrey-text'>${element}</h6>` + bipSaved.innerHTML;
 
 
 cargarAPI = () => {
