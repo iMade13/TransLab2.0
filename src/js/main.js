@@ -28,7 +28,9 @@ window.onload = () => {
             const contCard = document.getElementById('contCard');
             const option = document.createElement('option');
             option.text = numberCard;
-            contCard.add(option, contCard[0]);
+            const cards = contCard.add(option, contCard[0]);
+
+            //document.getElementById('cardsSaldo').innerText = cards;
         }
     });
 }
