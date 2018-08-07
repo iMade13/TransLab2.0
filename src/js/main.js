@@ -39,6 +39,8 @@ window.onload = () => {
     });
 }
 
+
+
 cargarAPI = () => {
     const numberCardBip = document.getElementById('cardNumber').value;
     document.getElementById('cardNumber').value = '';
