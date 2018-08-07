@@ -30,7 +30,7 @@
         <!--comienzo del perfil-->
         <div class="container">
             <div class="row">
-                <div class="col boxSaldo">
+                <div class="col-12 boxSaldo">
                     <input type="number" class="cardNumber" id="cardNumber" placeholder="Número tarjeta">
                 </div>
             </div>
@@ -41,16 +41,14 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col d-inline-flex justify-content-start" id="boxSelect">
+                <div class="col-12 d-inline-flex justify-content-start" id="boxSelect">
                     <select class="custom-select col-6 boxSelect" id="selectHorarios">
                           <option value="" disabled selected>Horarios</option>
                           <option value=630>Bajo: 6:00-6:29 || 20:45-23:00</option>
                           <option value=680>Valle: 06:30-06:59 ||09:00-17:59 || 20:00-20:44</option>
                           <option value=760>Punta: 7:00-8:59 || 18:00-19:59</option>
                     </select>
-                    <select class="custom-select col-6 boxSelect" id="selectTarjetas">
-                                      
-                  </select>
+                    <select class="custom-select col-6 boxSelect" id="selectTarjetas"></select>
                 </div>
                 <div class="col d-flex justify-content-center">
                     <input type="button" id="btn-calcular" class="botones " value="CALCULAR" onclick="calcularSaldo()">
@@ -59,33 +57,29 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <!-- <p class="titulo-tarjetas">Costo Pasaje</p> -->
-                        <div id="costoPasaje">
-                        </div>
-                        <!-- <p class="titulo-tarjetas">Saldo Final</p> -->
-                        <div id="saldoFinal">
-                        </div>
+                        <div id="costoPasaje"></div>
+                        <div id="saldoFinal"></div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--fin del perfil-->
 
-    <!--Comienzo menu hamburguesa-->
-    <div class="row">
-        <div class="col col-md-3">
-            <div class="menu-lateral" id="menu-lateral">
-                <a href="saldo.html" class="nav-link "><i class="fas fa-dollar-sign "></i> Ver Saldo</a>
-                <a href="calcular.html" class="nav-link "><i class="fas fa-calculator "></i> Calcular Tarifa</a>
-                <a href="profile.html" class="nav-link "><i class="fas fa-user-alt "></i> Perfil</a>
-                <a href="preguntas.html" class="nav-link "><i class="fas fa-question "></i> Preguntas Frecuentes</a>
-                <a href="home.html" class="nav-link "><i class="fas fa-home "></i> Home</a>
+        <!--fin del perfil-->
+
+        <!--Comienzo menu hamburguesa-->
+        <div class="row">
+            <div class="col">
+                <div class="menu-lateral" id="menu-lateral">
+                    <a href="saldo.html" class="nav-link "><i class="fas fa-dollar-sign "></i> Ver Saldo</a>
+                    <a href="calcular.html" class="nav-link "><i class="fas fa-calculator "></i> Calcular Tarifa</a>
+                    <a href="profile.html" class="nav-link "><i class="fas fa-user-alt "></i> Perfil</a>
+                    <a href="preguntas.html" class="nav-link "><i class="fas fa-question "></i> Preguntas Frecuentes</a>
+                    <a href="home.html" class="nav-link "><i class="fas fa-home "></i> Home</a>
+                </div>
             </div>
         </div>
-    </div>
-    <!--Fin menú hamburguesa -->
-    <a href="#" class="fondo-enlace" id="fondo-enlace"></a>
+        <!--Fin menú hamburguesa -->
+        <a href="#" class="fondo-enlace" id="fondo-enlace"></a>
     </div>
 
     <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
