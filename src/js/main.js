@@ -22,7 +22,8 @@ window.onload = () => {
             if (numberCard == "") {
                 alert("Ingrese número de tarjeta")
             } else {
-                firebase.database().ref(`users/${user.uid}`).child('NúmeroBip').push(numberCard);
+                const db = firebase.database();
+                db.ref(`users/${user.uid}`).child(`bip`).push(numberCard);
             }
 
             const contCard = document.getElementById('contCard');
