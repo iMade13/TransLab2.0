@@ -54,6 +54,14 @@ function redirectFromLogin() {
     location.href = "home.html";
 }
 
+function logoutWithFireBase() {
+    firebase.auth().signOut()
+        .then(() => {
+            location.href = "index.html";
+            console.log('usuario finalizo su sesion')
+        })
+        .catch();
+}
 
 /* --------- FUNCIONES DEL TEST  ------- */
 window.validatePass = function(passwordValue) {

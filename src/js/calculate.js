@@ -1,7 +1,7 @@
 const calcularSaldo = () => {
     const numberCardBip = document.getElementById('cardNumber').value;
     document.getElementById('cardNumber').value = '';
-    fetch(`http://www.psep.cl/api/Bip.php?&numberBip=${numberCardBip}`)
+    fetch(`http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=${numberCardBip}`)
         .then(function(res) {
             return res.json();
         })
